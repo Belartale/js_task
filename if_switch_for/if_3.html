@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Даны 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки
+      b-3 срабатывает функция f3. Функция должна прочитать содержимое i-31 и
+      i-32 в переменные и сравнить их, вывести в out-3 большее число.
+    </h1>
+    <p>
+      Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5
+      и 111.
+    </p>
+
+    <input type="number" name="" class="i31" />
+    <input type="number" name="" class="i32" />
+    <button class="b-3">b-3</button>
+
+    <script>
+      let b3 = document.querySelector(".b-3");
+      let input31 = document.querySelector(".i31");
+      let input32 = document.querySelector(".i32");
+
+      let out3;
+
+      b3.addEventListener(
+        "click",
+        function f3() {
+          let i31 = +input31.value;
+          let i32 = +input32.value;
+
+          if (i31 > i32) {
+            out3 = i31;
+            console.log(out3);
+          } else if (i31 < i32) {
+            out3 = i32;
+            console.log(out3);
+          }
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать
+      содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат
+      сравнения - true или false выведите в out-1.
+    </h1>
+
+    <button class="b-1">b-1</button>
+
+    <script>
+      let b1 = document.querySelector(".b-1");
+      let i1 = 3;
+      let out1;
+
+      b1.addEventListener(
+        "click",
+        function f1() {
+          if (i1 == 4) {
+            out1 = true;
+            console.log(out1);
+          } else {
+            out1 = false;
+            console.log(out1);
+          }
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
