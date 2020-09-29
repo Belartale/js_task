@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Создайте button.b-1 - при нажатии на него выводите alert с номером задачи.
+    </h1>
+
+    <button class="b-1">b-3</button>
+
+    <h1>
+      Создайте input.b-2 type=button - при нажатии на него выводите alert с
+      номером задачи. Номер задачи просто пропишите вручную.
+    </h1>
+    <input type="button" value="button" />
+
+    <script>
+      let button = document.querySelector(".b-1");
+      button.addEventListener(
+        "click",
+        () => {
+          alert("task 1");
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
