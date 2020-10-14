@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<pre>
+Напишите функцию t1, которая при нажатии кнопки выводит в out-1 переменную a1.
+
+let a1 = 8;
+function t1() {
+
+}
+document.querySelector(‘.b-1’).onclick = t1;
+    </pre>
+		<button class="b1">button</button>
+		<div class="out1"></div>
+		<script>
+			let b1 = document.querySelector(".b1");
+			let out1 = document.querySelector(".out1");
+
+			let a1 = 8;
+
+			function t1() {
+				console.log(a1);
+			}
+
+			b1.addEventListener("click", t1, false);
+		</script>
+	</body>
+</html>

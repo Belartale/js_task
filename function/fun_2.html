@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<pre>
+Изменим задачу 1. Сейчас она только выводит переменную в заранее заданный блок. 
+Давайте сделаем так, чтобы функция, была более гибкой. Пусть теперь функция t2 
+возвращает переменную a2. Поскольку функция возвращает переменную, то имя функции со 
+скобками (вызов функции) можно встраивать в выражения. Обратите внимание, как изменился 
+вызов функции.
+
+let a2 = 8;
+function t2() {
+
+}
+document.querySelector(".b-2’)"onclick =function() {
+		document.querySelector(‘.out-2’).textContent = f2();
+}
+    </pre>
+		<button class="b2">button</button>
+		<div class="out2"></div>
+		<script>
+			let a2 = 8;
+			function f2(value) {
+				return value;
+			}
+			document.querySelector(".b2").onclick = function () {
+				document.querySelector(".out2").textContent = f2(a2);
+			};
+		</script>
+	</body>
+</html>

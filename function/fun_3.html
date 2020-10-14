@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<pre>
+Наша предыдущая функция, сильно все еще зависима от внешних переменных. 
+Давайте сделаем ее более универсальной. Пусть функция t3 принимает 2 параметра и
+выводит их произведение. Допишите код функции так, чтобы она возвращала произведение 
+двух чисел, переданных ей в качестве параметра a, b. Протестируем функцию на 
+двух примерах, с помощью кнопок b3-1 и b3-2.
+
+function t3(a,b) {
+
+}
+document.querySelector(‘.b-3-1’).onclick =function() {
+    document.querySelector(‘.out-3-1’).textContent = t3(3,4);
+}
+document.querySelector(‘.b-3-2’).onclick = function(){
+    document.querySelector(‘.out-3-2’).textContent = t3(5,6);
+}
+    </pre>
+		<button class="b-3-1">go</button>
+		<p class="out-3-1"></p>
+		<button class="b-3-2">go2</button>
+		<p class="out-3-2"></p>
+		<script>
+			function t3(a, b) {
+				return a + b;
+			}
+			document.querySelector(".b-3-1").onclick = function () {
+				document.querySelector(".out-3-1").textContent = t3(3, 4);
+			};
+			document.querySelector(".b-3-2").onclick = function () {
+				document.querySelector(".out-3-2").textContent = t3(5, 6);
+			};
+		</script>
+	</body>
+</html>
