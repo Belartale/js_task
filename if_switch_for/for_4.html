@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>
+			С помощью вложенных циклов, нарисуйте строку: ***_***_***_ где звездочки
+			рисуются с помощью внутреннего цикла от 0 до 3, а _ с помощью внешнего.
+		</h2>
+
+		<button class="b-4">b-3</button>
+		<p class="out-4"></p>
+
+		<script>
+			let b4 = document.querySelector(".b-4");
+			let out4 = document.querySelector(".out-4");
+
+			function t4() {
+				for (let i = 1; i <= 3; i++) {
+					for (let j = 1; j <= 1; j++) {
+						out4.textContent += "***";
+					}
+					out4.textContent += "_";
+				}
+			}
+
+			b4.addEventListener("click", t4, false);
+		</script>
+	</body>
+</html>

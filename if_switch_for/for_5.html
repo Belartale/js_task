@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<pre>
+С помощью вложенных циклов, нарисуйте строку:
+
+1
+*_*_*_
+2
+*_*_*_
+3
+*_*_*_
+Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифры и перенос строки br, , второй звездочки, знак подчеркивания и знак переноса.
+		</pre
+		>
+
+		<button class="b-5">b-5</button>
+		<div class="out-5"></div>
+
+		<script>
+			let b5 = document.querySelector(".b-5");
+			let out5 = document.querySelector(".out-5");
+
+			function t5() {
+				for (let i = 1; i <= 3; i++) {
+					out5.innerHTML += `${i}<br>`;
+					for (let j = 1; j <= 3; j++) {
+						out5.innerHTML += `*_`;
+					}
+					out5.innerHTML += "<br>";
+				}
+			}
+
+			b5.addEventListener("click", t5, false);
+		</script>
+	</body>
+</html>

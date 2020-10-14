@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<pre>
+С помощью вложенных циклов, нарисуйте строку:
+
+*_*_*_
+*_*_*_
+*_*_*_
+*_*_*_
+Решить задачу с помощью вложенных циклов. Внешний цикл выводит перенос строки br, внутренний - звездочки, знак подчеркивания.
+		</pre
+		>
+
+		<button class="b-6">b-6</button>
+		<div class="out-6"></div>
+
+		<script>
+			let b6 = document.querySelector(".b-6");
+			let out6 = document.querySelector(".out-6");
+
+			function t6() {
+				for (let i = 0; i < 4; i++) {
+					for (let j = 0; j < 3; j++) {
+						out6.innerHTML += "*_";
+					}
+					out6.innerHTML += "<br>";
+				}
+			}
+
+			b6.addEventListener("click", t6, false);
+		</script>
+	</body>
+</html>

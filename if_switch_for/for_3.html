@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>
+			Кнопка b-3 запускает функцию t3. Функция должна выводить в out-3 строку
+			вида: 25 24 23 22 . . 7 от 25 до 7 c шагом 1. Разделитель - пробел. Задача
+			решается с помощью цикла.
+		</h2>
+
+		<button class="b-3">b-3</button>
+		<p class="out-3"></p>
+
+		<script>
+			let b3 = document.querySelector(".b-3");
+			let out3 = document.querySelector(".out-3");
+
+			function t3() {
+				for (let i = 25; i >= 7; i--) {
+					const element = i;
+					console.log(element);
+				}
+			}
+			b3.addEventListener("click", t3, false);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>
+			Кнопка b-2 запускает функцию t2. Функция должна выводить в out-2 строку
+			вида: 2 4 6 ... 122 от 2 до 122 c шагом 2. Разделитель - пробел. Задача
+			решается с помощью цикла.
+		</h2>
+
+		<button class="b-2">b-2</button>
+		<p class="out-2"></p>
+
+		<script>
+			let out2 = document.querySelector(".out-2");
+			let b2 = document.querySelector(".b-2");
+			function t2() {
+				for (let i = 2; i <= 122; i++) {
+					let element = i + " ";
+					out2.textContent += element;
+				}
+			}
+			b2.addEventListener("click", t2, false);
+		</script>
+	</body>
+</html>
