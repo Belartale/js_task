@@ -1,4 +1,5 @@
-// readonly === только для чтения
+// создаем некоторый тип для объектов или классов указываем какие поля, функция, элементы
+// должны присуцтвовать у этих объектов
 
 interface Rect {
   readonly id: string;
@@ -8,6 +9,7 @@ interface Rect {
     height: number;
   };
 }
+// readonly === только для чтения
 
 const rect1: Rect = {
   id: "1234",
@@ -62,7 +64,11 @@ class Clock implements IClock {
 
 // =============== создать инт в котором будет много динамических ключей
 
-const css = {
+interface Styles {
+  [key: string]: string; // это для >>> border: "1px black",
+}
+
+const css: Styles = {
   border: "1px black",
   marginTop: "2px",
 };

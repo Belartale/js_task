@@ -34,7 +34,7 @@ function infinite(): never {
   while (true) {}
 }
 
-// Type
+// Type === позволяет создавать свои типы (type)
 type Login = string;
 const login: Login = "admin";
 
