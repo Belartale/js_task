@@ -7,9 +7,11 @@ function strip(x: string | number) {
   return x.trim();
 }
 
+// instanceof >>> можем проверить принадлежнность объекта к классу
+
 class MyResponse {
   header = "response header",
-  message = "response message"
+  result = "response message"
 }
 
 class MyError {
@@ -19,6 +21,25 @@ class MyError {
 
 function handle(res:MyResponse | MyError) {
   if (res instanceof MyResponse) {
-    
+    return {
+      info: res.header + res.result
+    }
+    } else {
+      return {
+        info: res.header + res.message
+      }
   }
 }
+
+// ===================
+
+type AlertType= "success" | "danger" | "warning"
+
+function setAlertType(type: AlertType) {
+  console.log(`Alert`)
+}
+
+setAlertType("success")
+setAlertType("warning")
+
+// setAlertType("some type") // нету типа у AlertType
