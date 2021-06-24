@@ -20,3 +20,10 @@ type UserKeysNoMeta2 = Pick<User, "name" | "email">; // >>> name email
 
 let u1: UserKeysNoMeta1 = "name";
 u1 = "_id"; // потому что только name или email
+
+
+// 4 модификатора доступа
+// public === значение подефолту
+// private
+// protected === доступ могут получить только наследники 
+// readonly
